@@ -14,6 +14,7 @@
 		0AA5453129E6045900EBCCB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5453029E6045900EBCCB2 /* Assets.xcassets */; };
 		0AA5453429E6045900EBCCB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5453229E6045900EBCCB2 /* LaunchScreen.storyboard */; };
 		0AA5453729E6045900EBCCB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5453629E6045900EBCCB2 /* main.m */; };
+		0AEA0C1929E8BA24000F8749 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0C1829E8BA24000F8749 /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		0AA5453329E6045900EBCCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA5453529E6045900EBCCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA5453629E6045900EBCCB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AEA0C1729E8BA24000F8749 /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
+		0AEA0C1829E8BA24000F8749 /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,7 @@
 		0AA5452329E6045800EBCCB2 /* DevslopesTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0AEA0C1629E8B90B000F8749 /* Services */,
 				0AA5452429E6045800EBCCB2 /* AppDelegate.h */,
 				0AA5452529E6045800EBCCB2 /* AppDelegate.m */,
 				0AA5452729E6045800EBCCB2 /* SceneDelegate.h */,
@@ -74,6 +78,15 @@
 				0AA5453629E6045900EBCCB2 /* main.m */,
 			);
 			path = DevslopesTutorial;
+			sourceTree = "<group>";
+		};
+		0AEA0C1629E8B90B000F8749 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0AEA0C1729E8BA24000F8749 /* HTTPService.h */,
+				0AEA0C1829E8BA24000F8749 /* HTTPService.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA5452C29E6045800EBCCB2 /* ViewController.m in Sources */,
+				0AEA0C1929E8BA24000F8749 /* HTTPService.m in Sources */,
 				0AA5452629E6045800EBCCB2 /* AppDelegate.m in Sources */,
 				0AA5453729E6045900EBCCB2 /* main.m in Sources */,
 				0AA5452929E6045800EBCCB2 /* SceneDelegate.m in Sources */,
