@@ -16,6 +16,14 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [[HTTPService instance] getTutorials:^(NSDictionary * _Nullable dataDict, NSString * _Nullable errorMessage) {
+        if (dataDict){
+            NSLog(@"Dictionary: %@", dataDict.debugDescription);
+        }else if (errorMessage){
+            //Display alert to user
+        }
+    }];
         
 }
 
