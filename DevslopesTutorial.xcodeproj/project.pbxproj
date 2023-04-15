@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A10F78629EA697700F02E6A /* VideoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A10F78529EA697700F02E6A /* VideoCell.m */; };
 		0AA5452629E6045800EBCCB2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5452529E6045800EBCCB2 /* AppDelegate.m */; };
 		0AA5452929E6045800EBCCB2 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5452829E6045800EBCCB2 /* SceneDelegate.m */; };
 		0AA5452C29E6045800EBCCB2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5452B29E6045800EBCCB2 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A10F78429EA697700F02E6A /* VideoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCell.h; sourceTree = "<group>"; };
+		0A10F78529EA697700F02E6A /* VideoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCell.m; sourceTree = "<group>"; };
 		0AA5452129E6045800EBCCB2 /* DevslopesTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevslopesTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AA5452429E6045800EBCCB2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0AA5452529E6045800EBCCB2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A10F78329EA694E00F02E6A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A10F78429EA697700F02E6A /* VideoCell.h */,
+				0A10F78529EA697700F02E6A /* VideoCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		0AA5451829E6045700EBCCB2 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 		0AA5452329E6045800EBCCB2 /* DevslopesTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0A10F78329EA694E00F02E6A /* View */,
 				0AEA0C1629E8B90B000F8749 /* Services */,
 				0AA5452429E6045800EBCCB2 /* AppDelegate.h */,
 				0AA5452529E6045800EBCCB2 /* AppDelegate.m */,
@@ -160,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0AA5452C29E6045800EBCCB2 /* ViewController.m in Sources */,
+				0A10F78629EA697700F02E6A /* VideoCell.m in Sources */,
 				0AEA0C1929E8BA24000F8749 /* HTTPService.m in Sources */,
 				0AA5452629E6045800EBCCB2 /* AppDelegate.m in Sources */,
 				0AA5453729E6045900EBCCB2 /* main.m in Sources */,
