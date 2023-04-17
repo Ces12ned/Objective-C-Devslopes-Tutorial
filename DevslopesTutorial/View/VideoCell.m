@@ -6,6 +6,7 @@
 //
 
 #import "VideoCell.h"
+#import "Video.h"
 
 @interface VideoCell()
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
@@ -31,10 +32,18 @@
     
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+-(void)updateUI: (nonnull Video*)video{
+    
+    self.titleLabel.text = video.videoTitle;
+    self.descriptionLabel.text = video.videoDescription;
+    
+    UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL: [NSURL URLWithString:video.thumbnailURL]]];
+    
+    self.thumbnailImage.image = image;
+    
 }
+
+
+
 
 @end

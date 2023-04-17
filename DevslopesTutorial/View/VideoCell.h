@@ -6,10 +6,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class Video;
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VideoCell : UITableViewCell
+
+-(void)updateUI: (nonnull Video*)video;
+
 
 @end
 
