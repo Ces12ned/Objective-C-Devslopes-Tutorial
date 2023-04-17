@@ -107,11 +107,88 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="Dmd-jb-MRt" id="Ygq-9m-JmP"/>
+                        <segue destination="FZ7-k1-51U" kind="presentation" identifier="videoVC" id="DrJ-MN-PzL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-28.169014084507044"/>
+        </scene>
+        <!--VideoVC-->
+        <scene sceneID="J4Z-yP-0Rt">
+            <objects>
+                <viewController id="FZ7-k1-51U" customClass="VideoVC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yDV-B5-si3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5R-5Q-vgh">
+                                <rect key="frame" x="0.0" y="65" width="393" height="240"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="240" id="7sg-oY-bkX"/>
+                                </constraints>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qFD-lI-3b9">
+                                <rect key="frame" x="16" y="325" width="361" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Wsw-hY-19P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sca-PJ-Q14">
+                                <rect key="frame" x="16" y="416" width="361" height="171"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="171" id="8rQ-aZ-tFr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sRN-Vj-KV0">
+                                <rect key="frame" x="16" y="766" width="361" height="35"/>
+                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CYu-Ly-F7r"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Done">
+                                    <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="doneButton:" destination="FZ7-k1-51U" eventType="touchUpInside" id="zDX-hj-kZW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CMF-jL-btL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CMF-jL-btL" firstAttribute="trailing" secondItem="Sca-PJ-Q14" secondAttribute="trailing" constant="16" id="TYV-WE-JiS"/>
+                            <constraint firstItem="qFD-lI-3b9" firstAttribute="top" secondItem="M5R-5Q-vgh" secondAttribute="bottom" constant="20" id="UiQ-tF-6y8"/>
+                            <constraint firstItem="CMF-jL-btL" firstAttribute="trailing" secondItem="sRN-Vj-KV0" secondAttribute="trailing" constant="16" id="aEA-xX-lUm"/>
+                            <constraint firstItem="CMF-jL-btL" firstAttribute="bottom" secondItem="sRN-Vj-KV0" secondAttribute="bottom" constant="41" id="bs8-my-fVM"/>
+                            <constraint firstItem="Sca-PJ-Q14" firstAttribute="top" secondItem="qFD-lI-3b9" secondAttribute="bottom" constant="20" id="fXP-h6-D4E"/>
+                            <constraint firstItem="CMF-jL-btL" firstAttribute="trailing" secondItem="qFD-lI-3b9" secondAttribute="trailing" constant="16" id="gej-LE-ycZ"/>
+                            <constraint firstItem="sRN-Vj-KV0" firstAttribute="leading" secondItem="CMF-jL-btL" secondAttribute="leading" constant="16" id="jAR-Fy-M2O"/>
+                            <constraint firstItem="qFD-lI-3b9" firstAttribute="leading" secondItem="CMF-jL-btL" secondAttribute="leading" constant="16" id="jIa-fo-TaU"/>
+                            <constraint firstItem="Sca-PJ-Q14" firstAttribute="leading" secondItem="CMF-jL-btL" secondAttribute="leading" constant="16" id="lNH-Mx-aP5"/>
+                            <constraint firstItem="M5R-5Q-vgh" firstAttribute="leading" secondItem="CMF-jL-btL" secondAttribute="leading" id="mcC-zf-552"/>
+                            <constraint firstItem="M5R-5Q-vgh" firstAttribute="top" secondItem="CMF-jL-btL" secondAttribute="top" constant="65" id="mfl-Iy-0Iu"/>
+                            <constraint firstItem="M5R-5Q-vgh" firstAttribute="trailing" secondItem="CMF-jL-btL" secondAttribute="trailing" id="q7C-HJ-3cM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Sca-PJ-Q14" id="tZ7-c6-z2e"/>
+                        <outlet property="titleLabel" destination="qFD-lI-3b9" id="BZb-b6-BrY"/>
+                        <outlet property="webView" destination="M5R-5Q-vgh" id="HOb-j1-yVi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g6d-u2-9CX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="887.78625954198469" y="-28.169014084507044"/>
         </scene>
     </scenes>
     <resources>
@@ -120,6 +197,9 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
