@@ -15,6 +15,7 @@
 		0AA5453129E6045900EBCCB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5453029E6045900EBCCB2 /* Assets.xcassets */; };
 		0AA5453429E6045900EBCCB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AA5453229E6045900EBCCB2 /* LaunchScreen.storyboard */; };
 		0AA5453729E6045900EBCCB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5453629E6045900EBCCB2 /* main.m */; };
+		0AAD5FEE29ED823D006638CC /* Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AAD5FED29ED823D006638CC /* Video.m */; };
 		0AEA0C1929E8BA24000F8749 /* HTTPService.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AEA0C1829E8BA24000F8749 /* HTTPService.m */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,8 @@
 		0AA5453329E6045900EBCCB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0AA5453529E6045900EBCCB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AA5453629E6045900EBCCB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AAD5FEC29ED823D006638CC /* Video.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Video.h; sourceTree = "<group>"; };
+		0AAD5FED29ED823D006638CC /* Video.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Video.m; sourceTree = "<group>"; };
 		0AEA0C1729E8BA24000F8749 /* HTTPService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTTPService.h; sourceTree = "<group>"; };
 		0AEA0C1829E8BA24000F8749 /* HTTPService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTTPService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -76,6 +79,7 @@
 		0AA5452329E6045800EBCCB2 /* DevslopesTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				0AAD5FEB29ED8203006638CC /* Model */,
 				0A10F78329EA694E00F02E6A /* View */,
 				0AEA0C1629E8B90B000F8749 /* Services */,
 				0AA5452429E6045800EBCCB2 /* AppDelegate.h */,
@@ -91,6 +95,15 @@
 				0AA5453629E6045900EBCCB2 /* main.m */,
 			);
 			path = DevslopesTutorial;
+			sourceTree = "<group>";
+		};
+		0AAD5FEB29ED8203006638CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0AAD5FEC29ED823D006638CC /* Video.h */,
+				0AAD5FED29ED823D006638CC /* Video.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		0AEA0C1629E8B90B000F8749 /* Services */ = {
@@ -178,6 +191,7 @@
 				0AA5452629E6045800EBCCB2 /* AppDelegate.m in Sources */,
 				0AA5453729E6045900EBCCB2 /* main.m in Sources */,
 				0AA5452929E6045800EBCCB2 /* SceneDelegate.m in Sources */,
+				0AAD5FEE29ED823D006638CC /* Video.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

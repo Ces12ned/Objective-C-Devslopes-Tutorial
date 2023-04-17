@@ -105,6 +105,9 @@
                             <constraint firstItem="Dmd-jb-MRt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="dNU-8g-zyc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Dmd-jb-MRt" id="Ygq-9m-JmP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
